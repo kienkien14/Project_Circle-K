@@ -87,18 +87,38 @@ html {
     position: relative;
 }
 
+.nav-img {
+    display: flex;
+}
+
+.logo0 {
+    margin-right: 0px;
+    margin-right: 0px;
+    z-index: 1;
+}
+
+.logo-mb,
+.logo-mb1,
+.logo-mb2 {
+    display: none;
+}
+
+.logo-mb3 {
+    display: none !important;
+}
+
 .logo1 {
     max-width: 60px;
-    margin-top: 8px;
+    padding-top: 12px;
     background-color: white;
+    width: 100%;
 }
 
 .logo2 {
     background-color: white;
-    margin-top: 10px;
-    margin-left: -4px;
-    padding: 0px 30px;
-    width: 105%;
+    /* margin-top: 8px; */
+    padding: 13px 14px 10px 14px;
+    width: 100%;
 }
 
 .nav-logo-list {
