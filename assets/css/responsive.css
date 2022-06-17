@@ -78,4 +78,7 @@
         height: 40px;
         color: white !important;
     }
+    .nav-icon-mb {
+        display: flex;
+    }
 }
