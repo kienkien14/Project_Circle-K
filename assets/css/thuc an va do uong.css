@@ -1,0 +1,103 @@
+.banner-food-drink .desc-banner .text {
+    float: none;
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+.banner-food-drink .desc-banner .t1 {
+    line-height: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -.7px;
+    font-size: 2.571em;
+}
+.banner-food-drink .desc-banner {
+    display: table;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+}
+.inner {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.banner-food-drink {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    background-color: transparent;
+    /* background-image: url(https://www.circlek.com.vn/wp-content/themes/circlek/images/banner/banner-fd-pc-new.jpg); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top:  20px;
+}
+.explore-more .title-ex {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "GothamBlack";
+    font-size: 2.143em;
+    color: #ed1c24;
+    padding-bottom: 41px;
+    padding-bottom: 12px;
+}
+
+.explore-more.big-one .inner .title-desc {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+    text-align: center;
+    padding-bottom: 45px;
+}
+.banner-food-drink .tl, .banner-food-drink .mb {
+    display: none;
+    width: 100%;
+}
+
+.explore-more.big-one .inner .item {
+    height: auto;
+    padding: 0 0;
+    background: none;
+}
+.explore-more .item {
+    width: 48.75%;
+    position: relative;
+}
+
+.explore-more.big-one .inner .item .info {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 94px 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.explore-more.big-one .inner .item .info .desc {
+    min-height: 100px;
+    padding: 0;
+    font-size: 1.14286em;
+    line-height: 21px;
+}
+.explore-more {
+    padding: 43px 0 66px 0;
+    background: #f4f4f4;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.explore-more .item.one .info {
+    max-width: 210px;
+}
+.explore-more .item .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 30px;
+    height: 100%;
+}
