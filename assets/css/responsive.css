@@ -81,4 +81,12 @@
     .nav-icon-mb {
         display: flex;
     }
+
+    .footer-text2 {
+        display: none;
+    }
+    
+    .footer-email {
+        display: none;
+    }
 }
