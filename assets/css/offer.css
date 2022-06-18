@@ -1,0 +1,324 @@
+/*Trang chu -Uu dai dac biet*/
+.breadcrumb .inner {
+    padding: 10px 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.inner {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.breadcrumb a {
+    color: #c2c2c2;
+    margin-right: 6px;
+}
+
+.breadcrumb a 
+{
+    font-size: 1em;
+    color: #525252;
+    line-height: 23px;
+}
+
+.breadcrumb span {
+    color: #fc9911;
+    font-weight: 700;
+}
+
+.breadcrumb span 
+{
+    font-size: 1em;
+    line-height: 23px;
+}
+
+.breadcrumb {
+    background: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-radius: 4px;
+}
+
+/*Uu dai dac biet*/
+
+.sp-offers-page>.inner {
+    padding-top: 41px;
+}
+.inner {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sp-offers-page h3.tits {
+    display: block;
+    margin-bottom: 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.banner-food-drink .desc-banner .t1, .sp-offers-page h3.tits, .news-events-page h3.tit {
+    font-size: 2.6em;
+    color: #db291d;
+}
+
+.sp-offers-page .p-tits {
+    display: block;
+    margin-bottom: 37px;
+    text-align: center;
+}
+
+.sp-offers-page .p-tits
+{
+    font-size: 1.143em;
+    color: #000;
+    line-height: 25px;
+}
+
+/*Chon dia diem*/
+.text-center {
+    text-align: center;
+}
+
+.filter-select {
+    width: 290px;
+    margin: 0 auto 35px;
+    border: 1px solid #b9b9b9;
+    border-radius: 6px;
+    background: #f0f0f0;
+    height: 33px;
+    position: relative;
+    font-family: "Roboto",arial,Helvetica,sans-serif;
+}
+
+.filter-select .lbe {
+    position: absolute;
+    width: 130px;
+    color: #fff;
+    border-radius: 6px;
+    background: red;
+    border: none;
+    height: 33px;
+    line-height: 33px;
+    top: -1px;
+    left: -1px;
+}
+
+.filter-select select {
+    appearance: none;
+    height: 31px;
+    float: right;
+    width: 160px;
+    border: none;
+    padding-left: 17px;
+    
+}
+
+/*Banner chinh*/
+.sp-offers-page .blk-sp-off .sp-off-main {
+    width: 100%;
+}
+
+.sp-offers-page .blk-sp-off .sp-off-main .inner {
+    border: 1px solid #d8d8d8;
+}
+
+.inner {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sp-offers-page .blk-sp-off .sp-off-main .pc-tl {
+    display: block;
+    width: 100%;
+}
+
+.sp-offers-page .blk-sp-off .sp-off-main .mb {
+    display: none;
+    width: 100%;
+}
+
+/*button fb*/
+.clearfix::before
+{
+    display: table;
+    content: " ";
+    box-sizing: border-box;
+}
+
+.fb-social{
+    text-align: right;
+}
+.sp-offers-page .blk-sp-off .sp-off-main .fb-social {
+    height: 20px;
+    padding: 0 30px;
+    margin: 15px 0 16px;
+}
+
+.sp-offers-page .blk-sp-off .sp-off-main .fb-social .social-like-fb
+{
+    display: inline-block;
+}
+
+.fb_iframe_widget {
+    display: inline-block;
+    position: relative;
+}
+
+.fb_iframe_widget {
+    vertical-align: top;
+}
+
+element.style {
+    vertical-align: bottom;
+    width: 60px;
+    height: 28px;
+}
+
+.fb_iframe_widget span {
+    display: inline-block;
+    position: relative;
+    text-align: justify;
+}
+
+
+element.style {
+    border: none;
+    visibility: visible;
+    width: 60px;
+    height: 28px;
+}
+
+.fb_iframe_widget iframe {
+    position: absolute;
+}
+
+.sp-offers-page .blk-sp-off .sp-off-main .fb-social .social-share-fb {
+    display: inline-block;
+}
+
+.fb_iframe_widget {
+    display: inline-block;
+    position: relative;
+}
+.fb_iframe_widget {
+    vertical-align: top;
+}
+
+element.style {
+    vertical-align: bottom;
+    width: 76px;
+    height: 20px;
+}
+
+.fb_iframe_widget span {
+    display: inline-block;
+    position: relative;
+    text-align: justify;
+}
+
+element.style {
+    border: none;
+    visibility: visible;
+    width: 76px;
+    height: 20px;
+}
+
+.fb_iframe_widget iframe {
+    position: absolute;
+}
+
+.clearfix::after{
+    clear: both;
+    display: table;
+    content: " ";
+    box-sizing: border-box;
+}
+
+/*Khuyen mai dac biet thang 6*/
+
+.sp-offers-page .blk-sp-off .sp-off-main .go-to {
+    padding: 0 30px 20px;
+}
+
+.sp-offers-page .blk-sp-off .sp-off-main .go-to .ex {
+    float: left;
+    width: calc(610 * 100%/958);
+}
+
+.sp-offers-page .blk-sp-off .sp-off-main .go-to h3 {
+    text-transform: uppercase;
+}
+
+.sp-offers-page .blk-sp-off .sp-off-main .go-to h3{
+    font-size: 1.714em;
+    color: #db291d;
+}
+
+.sp-offers-page .blk-sp-off .sp-off-main .go-to p.d-t {
+    margin-top: 9px;
+    line-height: 23px;
+    font-style: italic;
+}
+
+.sp-offers-page .blk-sp-off .sp-off-main .go-to p.d-t{
+    font-size: 1.143em;
+    color: #000;
+}
+
+.sp-offers-page .blk-sp-off .sp-off-main .go-to .ctn {
+    margin-top: 15px;
+    line-height: 23px;
+}
+
+.sp-offers-page .blk-sp-off .sp-off-main .go-to .ctn{
+    font-size: 1.143em;
+    color: #000;
+}
+
+.sp-offers-page .blk-sp-off .sp-off-main .go-to .add-on-2 {
+    float: right;
+    margin-right: 10px;
+}
+.button-kind-2.add-on-2{
+    background: #db291d;
+}
+
+.button-kind-2.add-on-2 a{
+    color: #fff;
+}
+
+.button-kind-2 a, .add-on-2{
+    padding: 0 20px 0 8px ;
+    letter-spacing: 1.2px;
+    border: 1px solid #db291d;
+    border-radius: 8px;
+    height: 38px;
+
+}
+
+.button-kind-2 span.ico-2{
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    width: 13px;
+    height: 13px;
+    background-color: transparent;
+    background-image: url(https://www.circlek.com.vn/wp-content/themes/circlek/images/icon/button-ico.png);
+    background-repeat: no-repeat;
+    background-position: 0 -13px;
+    transition: right .2s ease;
+}
+
+.button-kind-2 a{
+    font-size: .857em;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: ;
+}
+
