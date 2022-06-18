@@ -322,3 +322,159 @@ element.style {
     vertical-align: ;
 }
 
+<<<<<<< Updated upstream
+=======
+/*Kham pha them*/
+.explore-more {
+    padding: 43px 0 66px 0;
+    background: #f4f4f4;
+}
+
+.inner {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.explore-more .title-ex {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "GothamBlack";
+    font-size: 2.143em;
+    color: #ed1c24;
+    padding-bottom: 41px;
+}
+
+.explore-more .item {
+    width: 48.75%;
+    position: relative;
+}
+
+.left {
+    float: left;
+}
+
+.explore-more .item.one .info {
+    max-width: 210px;
+}
+
+.explore-more .item .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 30px;
+    height: 100%;
+}
+
+.explore-more .item .title {
+    padding-top: 27px;
+    text-transform: uppercase;
+    line-height: 26px;
+    font-family: "GothamBlack";
+    font-size: 1em;
+    color: #fff;
+}
+
+.explore-more .item .desc {
+    padding-top: 7px;
+    min-height: 60px;
+    line-height: 18px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.tl, .mb{
+    display: none;
+}
+
+.explore-more .item .add-on-1 {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    margin: 63px 0 0 0;
+    border: 1px solid #fff;
+}
+
+.button-kind-2,{
+    border-radius: 8px;
+    background-color: transparent;
+    height: 38px;
+}
+
+.explore-more .item .add-on-1 span.ico-1 {
+    background-position: 0 -13px;
+}
+
+/*ben phai*/
+.explore-more .item {
+    width: 48.75%;
+    position: relative;
+}
+.right {
+    float: right;
+}
+
+.explore-more .item.two .info {
+    max-width: 280px;
+}
+
+.explore-more .item .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 30px;
+    height: 100%;
+}
+
+.explore-more .item .title {
+    padding-top: 27px;
+    text-transform: uppercase;
+    line-height: 26px;
+    font-family: "GothamBlack";
+    font-size: 1.571em;
+    color: #fff;
+}
+
+.explore-more .item.two .desc {
+    padding-right: 30px;
+}
+
+.explore-more .item .desc {
+    padding-top: 7px;
+    min-height: 60px;
+    line-height: 18px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.explore-more .item .add-on-1 {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    margin: 63px 0 0 0;
+    border: 1px solid #fff;
+}
+
+.explore-more .item .add-on-1 a {
+    color: #fff;
+    padding: 0 34px 0 17px;
+    text-decoration: none;
+}
+
+.button-kind-2 a{
+    letter-spacing: 1.2px;
+}
+
+.explore-more .item .add-on-1 span.ico-1 {
+    background-position: 0 -13px;
+}
+
+.clearfix {
+    clear: both;
+    display: block;
+}
+
+.footer {
+    margin-top: 30px;
+}
+>>>>>>> Stashed changes
