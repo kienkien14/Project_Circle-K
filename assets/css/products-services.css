@@ -1,0 +1,25 @@
+/*Title*/
+.explore-more.big-one .inner .title-ex {
+    padding-bottom: 12px;
+}
+
+.explore-more .title-ex {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "GothamBlack";
+    font-size: 2.143em;
+    color: #ed1c24;
+    /* padding-bottom: 41px; */
+}
+
+.explore-more.big-one .inner .title-desc {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.explore-more{
+    margin-top: 10rem;
+}
