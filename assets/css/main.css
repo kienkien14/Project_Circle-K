@@ -292,6 +292,23 @@ html {
     text-transform: uppercase;
 }
 
+.list_ta {
+    display: none;
+}
+
+.list_tu{
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.doimauBtn {
+    color: white !important;
+    background-color: #b70e11 !important;
+}
+
 .btn-food {
     display: flex;
     justify-content: center;
@@ -305,11 +322,6 @@ html {
 .btn-food1 div {
     font-size: 15px;
     padding: 8px 36px;
-}
-
-.btn-food1-active {
-    background-color: #b70e11 !important;
-    color: white !important;
 }
 
 .slide5-content {

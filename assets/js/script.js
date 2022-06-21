@@ -1,19 +1,26 @@
-// let btnThucAn = document.querySelector('.btn_ta')
-// let btnThucUong = document.querySelector('.btn_tu')
-
-// let lst_ta = document.querySelector('.list_ta')
-// let lst_tu = document.querySelector('.list_tu')
-
-// btnThucAn.addEventListener('click', function () {
-//     lst_ta.classList.add('active')
-//     lst_tu.classList.remove('active')
-// });
+let btnThucAn = document.querySelector('.btn_ta')
+let btnThucUong = document.querySelector('.btn_tu')
 
 
-// btnThucUong.addEventListener('click', function () {
-//     lst_ta.classList.remove('active')
-//     lst_tu.classList.add('active')
-// });
+let lst_ta = document.querySelector('.list_ta')
+let lst_tu = document.querySelector('.list_tu')
+
+
+
+btnThucAn.addEventListener('click', function () {
+    lst_ta.classList.add('active')
+    lst_tu.classList.remove('active')
+    btnThucAn.classList.add('doimauBtn')
+    btnThucUong.classList.remove('doimauBtn')
+});
+
+
+btnThucUong.addEventListener('click', function () {
+    lst_ta.classList.remove('active')
+    lst_tu.classList.add('active')
+    btnThucAn.classList.remove('doimauBtn')
+    btnThucUong.classList.add('doimauBtn')
+});
 
 
 // Sign Up
