@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel -Quản lý nhân viên </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <style>
+        th,
+        td {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;
+            /* border-width: 1px 0; */
+            border: 2px solid;
+        }
+    </style>
+</head>
+
+<body style="text-align:center;">
+
+    <h1 style="color:red;">
+        Thông tin nhân viên
+    </h1>
+
+
+
+    <button onclick="ShowUser()">
+        Thông tin nhân viên
+    </button>
+
+    <br><br>
+
+    <table id="table" align="center" ></table>
+
+    <script>
+
+
+        var list = [
+            { "id": "1", "Full_Name": "Nguyễn Đức Phương Nam", "Addr": "Đống Đa,Kim Liên ,Hà Nội", "Birthdays": "28/11/2002", "gender": "Nam", "Phone": "0972824730", "Role": "admin" },
+            { "id": "2", "Full_Name": "Nguyễn Tuấn Tài ", "Addr": "Hà Nội", "Birthdays": "20/01/2002", "gender": "Nam", "Phone": "123456789", "Role": "admin" },
+            { "id": "3", "Full_Name": "Nguyễn Trung Kiên", "Addr": "Hà Nội", "Birthdays": "21/02/2002", "gender": "Nam", "Phone": "987654321", "Role": "admin" }
+        ];
+
+        function ShowUser() {
+            var cols = [];
+
+            for (var i = 0; i < list.length; i++) {
+                for (var k in list[i]) {
+                    if (cols.indexOf(k) === -1) {
+
+                        // Push all keys to the array
+                        cols.push(k);
+                    }
+                }
+            }
+
+            // Create a table element
+            var table = document.createElement("table");
+
+            // Create table row tr element of a table
+            var tr = table.insertRow(-1);
+
+            for (var i = 0; i < cols.length; i++) {
+
+                // Create the table header th element
+                var theader = document.createElement("th");
+                theader.innerHTML = cols[i];
+
+                // Append columnName to the table row
+                tr.appendChild(theader);
+            }
+
+            // Adding the data to the table
+            for (var i = 0; i < list.length; i++) {
+
+                // Create a new row
+                trow = table.insertRow(-1);
+                for (var j = 0; j < cols.length; j++) {
+                    var cell = trow.insertCell(-1);
+
+                    // Inserting the cell at particular place
+                    cell.innerHTML = list[i][cols[j]];
+                }
+            }
+
+            // Add the newly created table containing json data
+            var el = document.getElementById("table");
+            el.innerHTML = "";
+            el.appendChild(table);
+        }   
+    </script>
+</body>
+
+</html>
