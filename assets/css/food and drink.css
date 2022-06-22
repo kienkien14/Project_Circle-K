@@ -4,6 +4,7 @@
     display: table-cell;
     vertical-align: middle;
 }
+
 .banner-food-drink .desc-banner .t1 {
     line-height: 48px;
     color: #fff;
@@ -11,17 +12,20 @@
     letter-spacing: -.7px;
     font-size: 2.571em;
 }
+
 .banner-food-drink .desc-banner {
     display: table;
     width: 100%;
     height: 100%;
     max-width: 400px;
 }
+
 .inner {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
 }
+
 .banner-food-drink {
     width: 100%;
     height: 350px;
@@ -30,8 +34,9 @@
     /* background-image: url(https://www.circlek.com.vn/wp-content/themes/circlek/images/banner/banner-fd-pc-new.jpg); */
     background-repeat: no-repeat;
     background-position: center center;
-    margin-top:  20px;
+    margin-top: 20px;
 }
+
 .explore-more .title-ex {
     text-transform: uppercase;
     text-align: center;
@@ -49,7 +54,9 @@
     text-align: center;
     padding-bottom: 45px;
 }
-.banner-food-drink .tl, .banner-food-drink .mb {
+
+.banner-food-drink .tl,
+.banner-food-drink .mb {
     display: none;
     width: 100%;
 }
@@ -59,6 +66,7 @@
     padding: 0 0;
     background: none;
 }
+
 .explore-more .item {
     width: 48.75%;
     position: relative;
@@ -80,6 +88,7 @@
     font-size: 1.14286rem;
     line-height: 21px;
 }
+
 .explore-more {
     padding: 43px 0 66px 0;
     background: #f4f4f4;
@@ -88,20 +97,24 @@
 .left {
     float: left;
 }
+
 .right {
     float: right;
 }
+
 .explore-more .item.one .info {
     max-width: 300px;
 }
+
 .explore-more .item .info {
     position: absolute;
     top: 0;
     left: 0;
     margin: 0 0 0 30px;
     height: 100%;
-} 
-.footer{
+}
+
+.footer {
     margin-top: 200px;
 }
 
@@ -115,16 +128,17 @@
     width: 160px;
 }
 
-.button-kind-2 a, .add-on-1{
-    padding: 0 20px 0 8px ;
+.button-kind-2 a,
+.add-on-1 {
+    padding: 0 20px 0 8px;
     letter-spacing: 1.2px;
-    border:none;
+    border: none;
     border-radius: 8px;
     height: 38px;
     color: #fff;
 }
 
-.button-kind-2 span.ico-{
+.button-kind-2 span.ico- {
     display: block;
     position: absolute;
     top: 12px;
@@ -138,9 +152,32 @@
     transition: right .2s ease;
 }
 
-.button-kind-2 a{
+.button-kind-2 a {
     font-size: .75rem;
     text-transform: uppercase;
     text-decoration: none;
     vertical-align: middle;
+}
+
+.all_product {
+    width: 100%;
+    margin: 0;
+}
+
+.info {
+    height: 30px;
+}
+
+.product_row img {
+    width: 100%;
+    height: 100%;
+}
+
+.product_row {
+    text-align: center;
+    display: flex;
+    height: 240px;
+    max-width: 960px;
+    margin: auto;
+    margin-top: 50px;
 }
