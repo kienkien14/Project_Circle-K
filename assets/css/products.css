@@ -1,0 +1,126 @@
+.wrapper {
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+}
+
+.main-container {
+    padding-top: 99px;
+}
+
+.header {
+    width: 100%;
+    padding-bottom: 9px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.head-tl {
+    display: none;
+    width: 100%;
+    height: 90px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%);
+}
+
+.pro-and-ser-page {
+    width: 100%;
+}
+
+.tabs-fd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 76px;
+    border-bottom: 1px solid #e7e7e7;
+    background: #fff;
+}
+
+.tabs-fd.tab-pr-sv .inner {
+    padding-right: 64px;
+}
+
+.tabs-fd .inner {
+    padding-right: 64px;
+    position: relative;
+}
+.inner {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.vertical-list .item .dltb {
+    width: 100%;
+}
+
+.vertical-list .item.img-ph .blk-desc {
+    width: 50.72916666666667%;
+    padding: 15px 35px 15px 0;
+}
+
+.vertical-list .item .img-tbl {
+    display: none;
+    background-position: center top;
+    background-size: auto 100%;
+}
+
+.vertical-list .item h3.tits {
+    margin-bottom: 11px;
+    text-transform: uppercase;
+}
+
+.vertical-list .item h3.tits {
+    font-size: 1.714em;
+    color: #db291d;
+}
+
+.vertical-list .item .desc p {
+    margin-bottom: 15px;
+    line-height: 20px;
+    color: #525252;
+}
+e
+
+.vertical-list .item .desc p {
+    margin-bottom: 15px;
+    line-height: 20px;
+    color: #525252;
+}
+
+.vertical-list .item .desc p:last-child {
+    margin-bottom: 0;
+}
+
+.vertical-list .item .desc p {
+    margin-bottom: 15px;
+    line-height: 20px;
+    color: #525252;
+}
+
+.vertical-list .item.img-ph .blk-ima {
+    width: 49.27083333333333%;
+}
+
+.vertical-list .item .blk-ima img {
+    display: block;
+}
+
+.vertical-list .item .dltbc{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.add-on-1{
+    border-radius: 10px;
+    
+}

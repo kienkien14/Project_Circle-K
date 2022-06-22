@@ -1,0 +1,250 @@
+.wrapper {
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    padding-bottom: 9px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.header.ani-scroll {
+    top: -45px;
+}
+
+.main-container {
+    padding-top: 99px;
+}
+
+.pro-and-ser-page {
+    width: 100%;
+}
+
+.vertical-list .wrap-products {
+    padding: 0;
+}
+
+.vertical-list .item {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0 0;
+    background-position: center top;
+    background-size: cover;
+}
+
+.inner {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.vertical-list .item .dltb {
+    width: 100%;
+}
+
+.vertical-list .item.img-ph .blk-desc {
+    width: 50.72916666666667%;
+    padding: 15px 35px 15px 0;
+}
+
+.vertical-list .item .img-tbl {
+    display: none;
+    background-position: center top;
+    background-size: auto 100%;
+}
+
+.vertical-list .item .img-tbl img {
+    display: block;
+    margin: 0 auto;
+}
+
+.vertical-list .item h3.tits {
+    margin-bottom: 11px;
+    text-transform: uppercase;
+}
+
+.vertical-list .item h3.tits {
+    font-size: 1.714em;
+    color: #db291d;
+}
+
+.vertical-list .item .desc p {
+    margin-bottom: 15px;
+    line-height: 20px;
+    color: #525252;
+}
+
+.vertical-list .item .desc p {
+    margin-bottom: 15px;
+    line-height: 20px;
+    color: #525252;
+}
+
+.vertical-list .item .dltbc{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*Kham pha them*/
+.explore-more 
+{
+    padding: 43px 0 66px 0;
+    background: #f4f4f4;
+}
+
+.inner {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.explore-more .title-ex {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "GothamBlack";
+    font-size: 2.143em;
+    color: #ed1c24;
+    padding-bottom: 41px;
+}
+
+.explore-more .item {
+    width: 48.75%;
+    position: relative;
+}
+
+.left {
+    float: left;
+}
+
+.explore-more .item.one .info {
+    max-width: 210px;
+}
+
+.explore-more .item .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 30px;
+    height: 100%;
+}
+
+.explore-more .item .title {
+    padding-top: 27px;
+    text-transform: uppercase;
+    line-height: 26px;
+    font-family: "GothamBlack";
+    font-size: 1em;
+    color: #fff;
+}
+
+.explore-more .item .desc {
+    padding-top: 7px;
+    min-height: 60px;
+    line-height: 18px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.tl, .mb{
+    display: none;
+}
+
+.explore-more .item .add-on-1 {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    margin: 63px 0 0 0;
+    border: 1px solid #fff;
+}
+
+.button-kind-2{
+    border-radius: 8px;
+    background-color: transparent;
+    height: 38px;
+}
+
+.explore-more .item .add-on-1 span.ico-1 {
+    background-position: 0 -13px;
+}
+
+/*ben phai*/
+.explore-more .item {
+    width: 48.75%;
+    position: relative;
+}
+.right {
+    float: right;
+}
+
+.explore-more .item.two .info {
+    max-width: 280px;
+}
+
+.explore-more .item .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 30px;
+    height: 100%;
+}
+
+.explore-more .item .title {
+    padding-top: 27px;
+    text-transform: uppercase;
+    line-height: 26px;
+    font-family: "GothamBlack";
+    font-size: 1.571em;
+    color: #fff;
+}
+
+.explore-more .item.two .desc {
+    padding-right: 30px;
+}
+
+.explore-more .item .desc {
+    padding-top: 7px;
+    min-height: 60px;
+    line-height: 18px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.explore-more .item .add-on-1 {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    margin: 63px 0 0 0;
+    border: 1px solid #fff;
+}
+
+.explore-more .item .add-on-1 a {
+    color: #fff;
+    padding: 0 34px 0 17px;
+    text-decoration: none;
+}
+
+.button-kind-2 a{
+    letter-spacing: 1.2px;
+}
+
+.explore-more .item .add-on-1 span.ico-1 {
+    background-position: 0 -13px;
+}
+
+.clearfix {
+    clear: both;
+    display: block;
+}
+
+.footer {
+    margin-top: 250px;
+}
