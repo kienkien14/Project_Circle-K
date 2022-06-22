@@ -43,7 +43,6 @@ function signup(e) {
   function login(e) {
     event.preventDefault();
     var username = document.getElementById("username").value;
-    var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     var user = localStorage.getItem(username);
     var data = JSON.parse(user);
@@ -51,7 +50,6 @@ function signup(e) {
       alert("Không tìm thấy username");
     } else if (
       username == data.username &&
-      email == data.email &&
       password == data.password
     ) {
       alert("Đăng nhập thành công");
