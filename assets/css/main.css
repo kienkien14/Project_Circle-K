@@ -339,10 +339,12 @@ html {
 .slide6-content1 h3,
 .slide6-content2-text1
   {
+    padding: 0;
     font-size: 30px;
     color: #db291d;
     line-height: 30px;
     font-weight: 800;
+    text-align: left;
 }
 
 .slide6-content1 span{
@@ -370,6 +372,8 @@ html {
     font-weight: 800;
     color: #23527c;
     margin-bottom: 0;
+    padding: 0;
+    text-align: left;
 }
 
 .slide6-content2-text2 {
