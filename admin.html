@@ -46,12 +46,12 @@
     </div>
     <hr>
     <ul class="app-menu">
-      <li><a class="app-menu__item active" href="employee.html"><i class='app-menu__icon bx bx-id-card'></i>
+      <li><a class="app-menu__item active" href="admin.html"><i class='app-menu__icon bx bx-id-card'></i>
           <span class="app-menu__label">Quản lý nhân viên</span></a></li>
-      <li><a class="app-menu__item" href="table-data-product.html"><i
+      <li><a class="app-menu__item" href="admin_product.html"><i
             class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý sản phẩm</span></a>
       </li>
-      <li><a class="app-menu__item" href="table-data-money.html"><i class='app-menu__icon bx bx-dollar'></i><span
+      <li><a class="app-menu__item" href="admin_salary.html"><i class='app-menu__icon bx bx-dollar'></i><span
             class="app-menu__label">Bảng kê lương</span></a></li>
     </ul>
   </aside>
@@ -60,125 +60,89 @@
       <div class="col-md-12">
         <div class="tile">
           <div class="tile-body">
-            <table class="table table-hover table-bordered js-copytextarea" cellpadding="0" cellspacing="0" border="0"
-              id="sampleTable">
+           
+          <div class="col-md-12 mb-1">
+            <label for="" class="form-label">Mã nhân viên</label>
+              <input type="text" name="txtID" class="form-control" id="id">
+          </div>
+          <div class="col-md-12 mb-1">
+            <label for="" class="form-label">Họ và tên</label>
+            <input type="text" name="txtFullName" class="form-control" id="name">
+          </div>
+          <div class="col-md-12 mb-1">
+            <label for="" class="form-label text-center">Địa chỉ</label>
+            <input type="text" name="txtDiaChi" class="form-control" id="address">
+          </div>
+          <div class="col-mb-9 mb-2 text-center pt-1">
+            <button onclick="add()" class="btn btn-success w-25">Thêm</button>
+        </div>
+         
+            
+            <table class="table" id="render">
               <thead>
                 <tr>
-                  <th width="10"><input type="checkbox" id="all"></th>
-                  <th>ID nhân viên</th>
-                  <th width="150">Họ và tên</th>
-                  <th width="300">Địa chỉ</th>
-                  <th>Ngày sinh</th>
-                  <th>Giới tính</th>
-                  <th>SĐT</th>
-                  <th>Chức vụ</th>
-                  <th width="100">Tính năng</th>
+                  <th scope="col">Mã nhân viên</th>
+                  <th scope="col">Tên nhân viên</th>
+                  <th scope="col">Địa chỉ</th>
                 </tr>
               </thead>
-              <tbody>
-
+              <!-- <tbody >
                 <tr>
-                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                  <td>#CD12837</td>
-                  <td>Hồ Thị Thanh Ngân</td>
-                  <td>Đống đa, Hà Nội</td>
-                  <td>12/02/1999</td>
-                  <td>Nữ</td>
-                  <td>0926737168</td>
-                  <td>Bán hàng</td>
-                  <td class="table-td-center"><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
-                      onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
-                    </button>
-                    <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
-                      data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
-                    </button>
-                  </td>
+                  <th scope="row">1</th>
+                  <td>Kiên</td>
+                  <td>Hồ Chí Minh</td>
                 </tr>
                 <tr>
-                  <td width="10"><input type="checkbox" name="check3" value="3"></td>
-                  <td>#LO2871</td>
-                  <td>Phạm Thu Cúc</td>
-                  <td>Thanh Xuân,Hà Nội </td>
-                  <td>02/06/1998</td>
-                  <td>Nữ</td>
-                  <td>0931491997</td>
-                  <td>Thu ngân</td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" onclick="myFunction()"><i
-                        class="fas fa-trash-alt"></i>
-                    </button>
-                    <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
-                      data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td width="10"><input type="checkbox"></td>
-                  <td>#SR28746</td>
-                  <td>Trần Anh Khoa</td>
-                  <td>Cầu Giấy, Hà Nội </td>
-                  <td>18/02/1995</td>
+                  <th scope="row">2</th>
                   <td>Nam</td>
-                  <td>0916706633</td>
-                  <td>Tư vấn</td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" onclick="myFunction()"><i
-                        class="fas fa-trash-alt"></i>
-                    </button>
-                    <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
-                      data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
-                    </button>
-                  </td>
+                  <td>Hà Nội</td>
                 </tr>
-                <tr>
-                  <td width="10"><input type="checkbox"></td>
-                  <td>#BS76228</td>
-                  <td>Nguyễn Đặng Trọng Nhân</td>
-                  <td>Đặng Văn Ngữ, Hà Nội </td>
-                  <td>23/07/1996</td>
-                  <td>Nam</td>
-                  <td>0846881155</td>
-                  <td>Dịch vụ</td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" onclick="myFunction()"><i
-                        class="fas fa-trash-alt"></i>
-                    </button>
-                    <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
-                      data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
-                    </button>
-                  </td>
+                <tr id="4">
+                  <th scope="row">3</th>
+                  <td >Tài</td>
+                  <td>Hà Nội</td>
                 </tr>
-                <tr>
-                  <td width="10"><input type="checkbox"></td>
-                  <td>#YUI21376</td>
-                  <td>Nguyễn Thị Mai</td>
-                  <td>Hai Bà Trưng, Hà Nội</td>
-                  <td>09/12/2000</td>
-                  <td>Nữ </td>
-                  <td>0836333037</td>
-                  <td>Tư vấn</td>
-                  <td><button class="btn btn-primary btn-sm trash" title="Xóa" onclick="myFunction()"><i
-                        class="fas fa-trash-alt"></i>
-                    </button>
-                    <button class="btn btn-primary btn-sm edit" title="Sửa" id="show-emp" data-toggle="modal"
-                      data-target="#ModalUP"><i class="fas fa-edit"></i>
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
+              </tbody> -->
             </table>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <!--
-  MODAL
--->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/plugins/pace.min.js"></script>
-  <script type="text/javascript" src="js/plugins/chart.js"></script>
+
+  <script>
+    var data = [];
+
+    function add() {
+        var item_id = document.getElementById("id").value;
+        var item_name = document.getElementById("name").value;
+        var item_address = document.getElementById("address").value;
+
+        var item = {
+          Id: item_id,
+          Name: item_name,
+          Address: item_address
+        }
+        data.push(item)
+        render()
+    }
+
+    function render(){
+      table = ` <tr>
+        <th scope="col">Mã nhân viên</th>
+        <th scope="col">Tên nhân viên</th>
+        <th scope="col">Địa chỉ</th>
+        </tr>`
+        for (let i=0; i<data.length;i++){
+          table += `<tr>
+            <th scope="col>${data[i].Name}</th>
+            <th scope="col>${data[i].Id}</th>
+            <th scope="col>${data[i].Address}</th>
+          </tr>`
+        }
+        document.getElementById("render").innerHTML = table
+    }
+</script>
 </body>
 
 </html>
