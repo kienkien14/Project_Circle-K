@@ -1,13 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <title>Danh sách sản phẩm | Quản trị Admin</title>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý sản phẩm </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/admin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+
 </head>
-<body>
-    
-    
+
+<body class="app sidebar-mini rtl" onload="productTable()">
+    <!-- Navbar-->
+    <header class="app-header">
+        <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
+            aria-label="Hide Sidebar"></a>
+        <!-- Navbar Right Menu-->
+        <ul class="app-nav">
+            <!-- User Menu-->
+            <li><a class="app-nav__item" href="login.html"><i class='bx bx-log-out bx-rotate-180'></i> </a>
+            </li>
+        </ul>
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+        <div class="app-sidebar__user">
+            <a href="index.html">
+                <img class="app-sidebar__user-avatar" src="./assets/img/admin.png" width="50px" alt="User Image"></a>
+            <div>
+                <p class="app-sidebar__user-name"><b>Admin</b></p>
+                <p class="app-sidebar__user-designation">Chào mừng bạn trở lại</p>
+            </div>
+        </div>
+        <hr>
+        <ul class="app-menu">
+            <li><a class="app-menu__item " href="admin.html"><i class='app-menu__icon bx bx-id-card'></i>
+                    <span class="app-menu__label">Quản lý nhân viên</span></a></li>
+            <li><a class="app-menu__item active" href="admin_product.html"><i
+                        class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý sản
+                        phẩm</span></a>
+            </li>
+            <li><a class="app-menu__item" href="table-data-money.html"><i class='app-menu__icon bx bx-dollar'></i><span
+                        class="app-menu__label">Bảng kê lương</span></a></li>
+        </ul>
+    </aside>
+    <main class="app-content">
+        
+        <table >
+            <thead>
+                <tr>
+                  <th scope="col">Mã đơn</th>
+                  <th scope="col">Tên sản phẩm</th>
+                  <th scope="col">Giá</th>
+                  <th scope="col">Trạng thái</th>
+                  <th scope="col">Danh mục</th>
+                  <th>Loại Bỏ</th>
+                </tr>
+              </thead>
+              <tr  id="1">
+                <td>BM01</td>
+                <td>Bánh mì</td>
+                <td>10 000</td>
+                <td>Còn hàng</td>
+                <td>Danh mục</td>
+                <td>
+                  <button class="btnTable" id="1" onclick="func(this.id)">
+                    Xóa
+                  </button>
+                </td>
+              </tr>
+              <tr  id="2">
+                <td>BM02</td>
+                <td>Bánh chà bông</td>
+                <td>15 000</td>
+                <td>Còn hàng</td>
+                <td>Danh mục</td>
+                <td>
+                  <button class="btnTable" id="2" onclick="func(this.id)">
+                    Xóa
+                  </button>
+                </td>
+              </tr>
+              <tr  id="3">
+                <td>BM03</td>
+                <td>Bánh mì sữa</td>
+                <td>20 000</td>
+                <td>Hết hàng</td>
+                <td>Danh mục</td>
+                <td>
+                  <button class="btnTable" id="3" onclick="func(this.id)">
+                    Xóa
+                  </button>
+                </td>
+              </tr>
+              <tr  id="4">
+                <td>M01</td>
+                <td>Mì trộn</td>
+                <td>20 000</td>
+                <td>Còn hàng</td>
+                <td>Danh mục</td>
+                <td>
+                  <button class="btnTable" id="4" onclick="func(this.id)">
+                    Xóa
+                  </button>
+                </td>
+              </tr>
+        </table>
+
+      
+ 
+    </main>
+    <!--js src-->
+    <form action="">
+        
+    </form>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/plugins/pace.min.js"></script>
+    <script type="text/javascript" src="js/plugins/chart.js"></script>
+    <script>
+        var i ;
+        function func(i){
+            document.getElementById(i).remove();
+        }
+        
+    </script>
 </body>
+
 </html>
