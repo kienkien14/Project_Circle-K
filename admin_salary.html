@@ -63,7 +63,7 @@
             <table class="table table-hover table-bordered" id="sampleTable">
               <thead>
                   <tr>
-                      <th width="10"><input type="checkbox" id="all"></th>
+                      <th width="10"></th>
                       <th>Tên nhân viên</th>
                       <th>Giới Tính</th>
                       <th>Chức vụ</th>
@@ -76,34 +76,9 @@
                   </tr>
               </thead>
               <tbody>
-                  <tr>
-                      <td width="10"><input type="checkbox" name="check1" value="1" ></td>
-                      <td>Hồ Thị Thanh Ngân</td>
-                      <td>Nữ</td>
-                      <td>Bán hàng</td>
-                      <td>7.500.000 đ</td>
-                      <td>Không</td>
-                      <td>Không</td>
-                      <td>7.500.000 đ</td>
-                      <td><span class="badge bg-success">Đã nhận tiền</span></td>
-                      <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" ><i class="fas fa-trash-alt"></i></button>
-                          <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-                  </tr>
                <tr>
-                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                  <td>Trần Khả Ái</td>
-                  <td>Nữ</td>
-                  <td>Bán hàng</td>
-                  <td>7.500.000 đ</td>
-                  <td>Không</td>
-                  <td>1.000.000 đ</td>
-                  <td>8.500.000 đ</td>
-                  <td><span class="badge bg-success">Đã nhận tiền</span></td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-               </tr>
-               <tr>
-                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
+               <tr id="1">
+                  <td width="10"><input type="checkbox" name="check1" value="1" ></td>
                   <td>Phạm Thu Cúc</td>
                   <td>Nữ</td>
                   <td>Thu ngân</td>
@@ -112,11 +87,15 @@
                   <td>Không</td>
                   <td>7.000.000 đ</td>
                   <td><span class="badge bg-success">Đã nhận tiền</span></td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
+                  <td>
+                  <button class="btnTable btn-primary btn-sm trash"  id="1" onclick="func(this.id)">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+                  </td>
+                      <!-- <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td> -->
                </tr>
-               <tr>
-                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
+               <tr id="2">
+                  <td width="10"><input type="checkbox" name="check1" value="1" ></td>
                   <td>Trần Anh Khoa</td>
                   <td>Nam</td>
                   <td>Tư vấn</td>
@@ -125,11 +104,15 @@
                   <td>500.000 đ</td>
                   <td>7.500.000 đ</td>
                   <td><span class="badge bg-success">Đã nhận tiền</span></td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
+                  <td>
+                    <button class="btnTable btn-primary btn-sm trash"  id="2" onclick="func(this.id)">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                    </td>
+                      <!-- <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td> -->
                </tr>
-               <tr>
-                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
+               <tr id="3">
+                  <td width="10"><input type="checkbox" name="check1" value="1" ></td>
                   <td>Nguyễn Thành Nhân</td>
                   <td>Nam</td>
                   <td>Bảo trì</td>
@@ -137,63 +120,15 @@
                   <td>Không</td>
                   <td>Không</td>
                   <td>9.000.000 đ</td>
-                  <td><span class="badge bg-success">Đã nhận tiền</span></td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
+                  <td><span class="badge bg-danger">Chưa nhận tiền</span></td>
+                  <td>
+                    <button class="btnTable btn-primary btn-sm trash"  id="3" onclick="func(this.id)">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                    </td>
+                      <!-- <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td> -->
                </tr>
-               <tr>
-                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                  <td>Nguyễn Đặng Trọng Nhân</td>
-                  <td>Nam</td>
-                  <td>Dịch vụ</td>
-                  <td>6.500.000 đ</td>
-                  <td>Không</td>
-                  <td>Không</td>
-                  <td>6.500.000 đ</td>
-                  <td><span class="badge bg-success">Đã nhận tiền</span></td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-               </tr>
-               <tr>
-                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                  <td>Nguyễn Thị Mai</td>
-                  <td>Nữ</td>
-                  <td>Tư vấn</td>
-                  <td>7.000.000 đ</td>
-                  <td>Không</td>
-                  <td>Không</td>
-                  <td>7.000.000 đ</td>
-                  <td><span class="badge bg-success">Đã nhận tiền</span></td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-               </tr>
-               <tr>
-                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                  <td>Trương Nguyễn Trà My</td>
-                  <td>Nữ</td>
-                  <td>Thu ngân</td>
-                  <td>7.500.000 đ</td>
-                  <td>Không</td>
-                  <td>500.000 đ</td>
-                  <td>8.000.000 đ</td>
-                  <td><span class="badge bg-success">Đã nhận tiền</span></td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-               </tr>
-               <tr>
-                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                  <td>Nguyễn Nhật Tân</td>
-                  <td>Nam</td>
-                  <td>Quản kho</td>
-                  <td>8.500.000 đ</td>
-                  <td>Không</td>
-                  <td>Không</td>
-                  <td>8.500.000 đ</td>
-                  <td><span class="badge bg-success">Đã nhận tiền</span></td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-               </tr>
-               <tr>
+               <tr id="4">
                   <td width="10"><input type="checkbox" name="check1" value="1"></td>
                   <td>Lâm Nguyễn Tuân</td>
                   <td>Nam</td>
@@ -203,22 +138,14 @@
                   <td>Không</td>
                   <td>8.500.000 đ</td>
                   <td><span class="badge bg-danger">Chưa nhận tiền</span></td>
-                  <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
-                      <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
+                  <td>
+                    <button class="btnTable btn-primary btn-sm trash"  id="4" onclick="func(this.id)">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                    </td>
+                      <!-- <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td> -->
                </tr>
-               <tr>
-                  <td width="10"><input type="checkbox" name="check1" value="1"></td>
-                  <td>Hồ Thanh Toàn</td>
-                  <td>Nam</td>
-                  <td>Quản kho</td>
-                  <td>8.500.000 đ</td>
-                  <td>Không</td>
-                  <td>Không</td>
-                  <td>8.500.000 đ</td>
-                  <td><span class="badge bg-danger">Chưa nhận tiền</span></td>
-                   <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i></button>
-                          <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i class="fa fa-edit"></i></button></td>
-               </tr>
+              </tr>
               </tbody>
           </table>
           </div>
@@ -227,14 +154,15 @@
     </div>
   </main>
   <!-- MODAL -->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/plugins/pace.min.js"></script>
-  <script type="text/javascript" src="js/plugins/chart.js"></script>
   <script src="./assets/js/admin_salary.js"></script>
+
+  <script>
+      var i ;
+        function func(i){
+            document.getElementById(i).remove();
+        }
+        
+  </script>
 </body>
 
 </html>
